@@ -14,6 +14,8 @@
 开始
 ----
 在终端中运行下面的命令克隆这个资源库到本地
+
      git clone git@github.com:JetMuffin/PicCloud.git
+     
 接下来，将当前目录更改为PicCloud 目录，开始编码。
 
