@@ -19,3 +19,34 @@
      
 接下来，将当前目录更改为PicCloud 目录，开始编码。
 
+调试
+----
+先启动hadoop，在终端进入hadoop文件夹，输入以下命令
+
+     sbin/start-all.sh
+     
+启动后输入
+
+     jps
+     
+若显示进程为
+
+     xxxx namenode
+     xxxx datanode
+     xxxx nodemanager
+     xxxx resourcemanager
+     
+则启动正常，再启动hbase，进入hbase文件夹，输入以下命令
+
+     bin/start-hbase.sh
+     
+同样启动后输入
+
+     jps
+     
+若查看进程里多了
+
+     xxxx HMaster
+     xxxx HRegionServer
+     
+则表示启动成功，可以开始调试
